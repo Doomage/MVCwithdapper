@@ -1,0 +1,27 @@
+﻿@model mvcagain.Models.Publisher
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Create</title>
+</head>
+<body>
+    <div>
+        <form action="/Publisher/Create" method="post">
+            <br><br>
+            Publisher Name :<br>
+            <input type="text" name="Name">
+            <br><br>
+            <input type="submit" value="Create">
+        </form>
+    </div>
+</body>
+</html>
+

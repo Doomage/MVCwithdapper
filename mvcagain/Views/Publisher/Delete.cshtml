@@ -1,0 +1,29 @@
+﻿@model mvcagain.Models.Publisher
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Delete</title>
+</head>
+<body>
+    <div>
+        <h3>Are you sure you want to delete @Html.DisplayFor(model => model.Name)?</h3>
+
+        <br>
+        @using (Html.BeginForm("Delete", "Publisher", FormMethod.Post))
+        {
+            <div class="form-actions no-color">
+                <input type="submit" value="Delete" /> |
+                @Html.ActionLink("Back to List", "Index")
+            </div>
+        }
+    </div>
+</body>
+</html>
