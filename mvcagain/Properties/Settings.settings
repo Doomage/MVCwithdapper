@@ -3,7 +3,7 @@
   <Profiles />
   <Settings>
     <Setting Name="connectionString" Type="System.String" Scope="Application">
-      <Value Profile="(Default)">Server=DESKTOP-A9G0RJD\SQLEXPRESS;Database=bookstore;Trusted_Connection=True;</Value>
+      <Value Profile="(Default)">Server=.\SQLEXPRESS;Database=bookstore;Trusted_Connection=True;</Value>
     </Setting>
   </Settings>
 </SettingsFile>
